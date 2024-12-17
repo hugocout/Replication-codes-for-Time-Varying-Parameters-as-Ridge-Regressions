@@ -1,0 +1,33 @@
+%latex.default(ft, caption = paste("Results for Simulation ",     whatS, sep = ""), colheads = rep(attr(ft, "col.vars")[[2]],     4), rowname = attr(ft, "row.vars")[[2]], label = "s1_table",     rgroup = attr(ft, "row.vars")[[1]], cgroup = attr(ft, "col.vars")[[1]],     title = "", file = filename)%
+\begin{table}[!tbp]
+\caption{Results for Simulation 5\label{s1_table}} 
+\begin{center}
+\begin{tabular}{lllllcllllcllll}
+\hline\hline
+\multicolumn{1}{l}{\bfseries }&\multicolumn{4}{c}{\bfseries $K=6$}&\multicolumn{1}{c}{\bfseries }&\multicolumn{4}{c}{\bfseries $K=20$}&\multicolumn{1}{c}{\bfseries }&\multicolumn{4}{c}{\bfseries $K=100$}\tabularnewline
+\cline{2-5} \cline{7-10} \cline{12-15}
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{BVAR}&\multicolumn{1}{c}{2SRR}&\multicolumn{1}{c}{MSRRs}&\multicolumn{1}{c}{MSRRd}&\multicolumn{1}{c}{}&\multicolumn{1}{c}{BVAR}&\multicolumn{1}{c}{2SRR}&\multicolumn{1}{c}{MSRRs}&\multicolumn{1}{c}{MSRRd}&\multicolumn{1}{c}{}&\multicolumn{1}{c}{BVAR}&\multicolumn{1}{c}{2SRR}&\multicolumn{1}{c}{MSRRs}&\multicolumn{1}{c}{MSRRd}\tabularnewline
+\hline
+{\bfseries $\mathbf{\sfrac{K^*}{K}=0.2}$}&&&&&&&&&&&&&&\tabularnewline
+~~$\sigma_{\epsilon} =\text{Low}$& 0.054& 0.054& 0.051& 0.066&&-& 0.068& 0.066& 0.073&&-& 0.150& 0.147& 0.269\tabularnewline
+~~$\sigma_{\epsilon} =\text{Medium}$& 0.079& 0.082& 0.080& 0.100&&-& 0.115& 0.113& 0.122&&-& 0.283& 0.278& 0.561\tabularnewline
+~~$\sigma_{\epsilon} =\text{High}$& 0.126& 0.138& 0.136& 0.160&&-& 0.232& 0.228& 0.246&&-& 0.628& 0.613& 1.326\tabularnewline
+~~$\sigma_{\epsilon,t} = \text{SV Low-Med}$& 0.058& 0.062& 0.060& 0.074&&-& 0.078& 0.077& 0.080&&-& 0.185& 0.183& 0.338\tabularnewline
+~~$\sigma_{\epsilon,t}  = \text{SV Low-High}$& 0.065& 0.073& 0.077& 0.097&&-& 0.104& 0.106& 0.133&&-& 0.258& 0.263& 0.487\tabularnewline
+\hline
+{\bfseries $\mathbf{\sfrac{K^*}{K}=0.5}$}&&&&&&&&&&&&&&\tabularnewline
+~~$\sigma_{\epsilon} =\text{Low}$& 0.076& 0.066& 0.062& 0.082&&-& 0.086& 0.085& 0.090&&-& 0.169& 0.167& 0.289\tabularnewline
+~~$\sigma_{\epsilon} =\text{Medium}$& 0.095& 0.097& 0.096& 0.124&&-& 0.130& 0.127& 0.135&&-& 0.294& 0.290& 0.571\tabularnewline
+~~$\sigma_{\epsilon} =\text{High}$& 0.138& 0.151& 0.149& 0.183&&-& 0.238& 0.234& 0.254&&-& 0.633& 0.623& 1.304\tabularnewline
+~~$\sigma_{\epsilon,t} = \text{SV Low-Med}$& 0.078& 0.075& 0.072& 0.090&&-& 0.097& 0.096& 0.099&&-& 0.204& 0.200& 0.323\tabularnewline
+~~$\sigma_{\epsilon,t}  = \text{SV Low-High}$& 0.085& 0.089& 0.091& 0.111&&-& 0.120& 0.123& 0.151&&-& 0.268& 0.271& 0.475\tabularnewline
+\hline
+{\bfseries $\mathbf{\sfrac{K^*}{K}=1}$}&&&&&&&&&&&&&&\tabularnewline
+~~$\sigma_{\epsilon} =\text{Low}$& 0.098& 0.075& 0.078& 0.102&&-& 0.110& 0.114& 0.116&&-& 0.201& 0.198& 0.358\tabularnewline
+~~$\sigma_{\epsilon} =\text{Medium}$& 0.121& 0.118& 0.119& 0.150&&-& 0.155& 0.154& 0.163&&-& 0.309& 0.306& 0.629\tabularnewline
+~~$\sigma_{\epsilon} =\text{High}$& 0.161& 0.176& 0.177& 0.229&&-& 0.264& 0.257& 0.288&&-& 0.641& 0.635& 1.403\tabularnewline
+~~$\sigma_{\epsilon,t} = \text{SV Low-Med}$& 0.107& 0.087& 0.087& 0.108&&-& 0.121& 0.122& 0.126&&-& 0.230& 0.225& 0.374\tabularnewline
+~~$\sigma_{\epsilon,t}  = \text{SV Low-High}$& 0.112& 0.105& 0.109& 0.132&&-& 0.145& 0.147& 0.172&&-& 0.287& 0.289& 0.567\tabularnewline
+\hline
+\end{tabular}\end{center}
+\end{table}

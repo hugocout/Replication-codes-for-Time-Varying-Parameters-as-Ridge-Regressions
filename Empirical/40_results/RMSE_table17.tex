@@ -1,0 +1,37 @@
+%latex.default(ft, landscape = TRUE, caption = "", colheads = rep(attr(ft,     "col.vars")[[2]], 4), rowname = attr(ft, "row.vars")[[2]],     rgroup = attr(ft, "row.vars")[[1]], cgroup = attr(ft, "col.vars")[[1]],     title = "", file = filename)%
+\begin{landscape}\begin{table}[!tbp]
+\caption{\label{}} 
+\begin{center}
+\begin{tabular}{lllllcllllcllllcllll}
+\hline\hline
+\multicolumn{1}{l}{\bfseries }&\multicolumn{4}{c}{\bfseries AR}&\multicolumn{1}{c}{\bfseries }&\multicolumn{4}{c}{\bfseries ARDI}&\multicolumn{1}{c}{\bfseries }&\multicolumn{4}{c}{\bfseries VAR5}&\multicolumn{1}{c}{\bfseries }&\multicolumn{4}{c}{\bfseries VAR20}\tabularnewline
+\cline{2-5} \cline{7-10} \cline{12-15} \cline{17-20}
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{Plain}&\multicolumn{1}{c}{2SRR}&\multicolumn{1}{c}{MSRRs}&\multicolumn{1}{c}{MSRRd}&\multicolumn{1}{c}{}&\multicolumn{1}{c}{Plain}&\multicolumn{1}{c}{2SRR}&\multicolumn{1}{c}{MSRRs}&\multicolumn{1}{c}{MSRRd}&\multicolumn{1}{c}{}&\multicolumn{1}{c}{Plain}&\multicolumn{1}{c}{2SRR}&\multicolumn{1}{c}{MSRRs}&\multicolumn{1}{c}{MSRRd}&\multicolumn{1}{c}{}&\multicolumn{1}{c}{Plain}&\multicolumn{1}{c}{2SRR}&\multicolumn{1}{c}{MSRRs}&\multicolumn{1}{c}{MSRRd}\tabularnewline
+\hline
+{\bfseries GDP}&&&&&&&&&&&&&&&&&&&\tabularnewline
+~~$h=1$&1.00&\textbf{0.99}&0.99&0.99&&1.03&1.01&1.00&1.04&&1.04&1.02&1.03&1.02&&1.24&1.59&1.34&1.24\tabularnewline
+~~$h=2$&1.00&1.00&0.97&1.00&&1.05&1.21&\textbf{0.97}&1.05&&1.08&1.10&1.06&1.07*&&1.27&1.19&1.20&1.33\tabularnewline
+~~$h=4$&1.00&1.01&0.96&0.95&&1.07&1.06&\textbf{0.94}&0.97&&1.06&1.09&1.01&0.97&&1.10&1.05&1.05&0.97\tabularnewline
+\hline
+{\bfseries UR}&&&&&&&&&&&&&&&&&&&\tabularnewline
+~~$h=1$&1.00&1.02&1.04&1.02&&0.99&\textbf{0.97}&0.98&1.04&&1.10*&1.09&1.12&1.06&&1.63&1.47&1.59&1.27*\tabularnewline
+~~$h=2$&1.00&1.08&1.08&1.03&&\textbf{1.00}&1.16&1.12&1.01&&1.11&1.15&1.17&1.17&&1.40&1.67&1.50&1.70\tabularnewline
+~~$h=4$&\textbf{1.00}&1.15&1.10&1.05*&&1.00&1.08&1.04&1.02&&1.09&1.16&1.14*&1.19*&&1.07&1.20&1.15&1.11\tabularnewline
+\hline
+{\bfseries INF}&&&&&&&&&&&&&&&&&&&\tabularnewline
+~~$h=1$&1.00&\textbf{0.94}&0.95&0.96&&1.01&0.98&1.01&0.97&&1.00&0.96&0.96&1.06&&1.79&1.78&1.78&1.74\tabularnewline
+~~$h=2$&1.00&0.91&0.92&0.94&&1.06&1.12&\textbf{0.91}*&1.15&&1.03&1.07&0.93&1.07&&1.15&1.30**&1.18&1.07\tabularnewline
+~~$h=4$&1.00&0.85*&0.85*&0.86*&&1.06*&0.88&0.84&0.91&&1.00&0.93&\textbf{0.84}&0.87&&1.38&1.45&1.17&1.13\tabularnewline
+\hline
+{\bfseries IR}&&&&&&&&&&&&&&&&&&&\tabularnewline
+~~$h=1$&1.00&0.80***&0.84***&0.88***&&0.94***&\textbf{0.76}***&0.85***&0.96&&1.07&0.87**&0.93&1.04&&1.46*&1.67&1.77&0.98\tabularnewline
+~~$h=2$&1.00&0.83***&0.76***&0.82***&&0.94**&0.85**&\textbf{0.76}***&0.93&&0.97&0.88*&0.95&0.92**&&1.37&1.84&0.98&1.26\tabularnewline
+~~$h=4$&1.00&0.99&1.01&1.02&&0.93&0.95&0.90&0.99&&0.97&0.99&0.92&0.91&&1.08&1.07&0.97&\textbf{0.88}\tabularnewline
+\hline
+{\bfseries SPREAD}&&&&&&&&&&&&&&&&&&&\tabularnewline
+~~$h=1$&1.00&0.90***&0.92***&0.89***&&0.90**&\textbf{0.86}**&0.87***&0.86***&&0.96&0.87***&0.90**&0.92*&&2.13&2.30&2.21&1.98\tabularnewline
+~~$h=2$&1.00&0.97&0.98&0.97&&0.91*&0.94&0.95&0.92&&0.88**&\textbf{0.88}&0.88&0.88**&&2.03&2.12&2.12&1.90\tabularnewline
+~~$h=4$&1.00&1.21&1.03&1.12&&0.90**&1.03&1.03&0.91*&&\textbf{0.88}**&1.03&0.98&0.92&&0.89&1.08&0.95&0.98\tabularnewline
+\hline
+\end{tabular}\end{center}
+\end{table}\end{landscape}
